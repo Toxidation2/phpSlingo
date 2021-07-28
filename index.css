@@ -196,7 +196,7 @@
 	display: none;
 }
 
-#testbtn active {
+#testbtn:active {
 	background-image: url("./img/startbtn_rect_down.gif");
 }
 
@@ -288,10 +288,10 @@
 	background-image: url("./img/nobtn.gif");
 }
 
-#yesbtn active { 
+#yesbtn:active { 
 	background-image: url("./img/yesbtn_down.gif"); 
 }
-#nobtn active { 
+#nobtn:active { 
 	background-image: url("./img/nobtn_down.gif");
 }
 
