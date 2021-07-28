@@ -1,6 +1,7 @@
 #body {
 	background-color: black;
 }
+
 #bg {
 	position: absolute;
 	top: 0px;		
@@ -21,7 +22,7 @@
 	padding-left: 7px;
 }
 
-.cardcell hover {
+.cardcell:hover {
 	border: 2px solid red;
 	margin-top: -2px;
 	margin-left: -2px;
