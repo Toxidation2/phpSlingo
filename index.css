@@ -1,15 +1,15 @@
-#body {
+body {
 	background-color: black;
 }
 
-#bg {
+.bg {
 	position: absolute;
 	top: 0px;		
 	left: 0px;
-	z-index: -1px;
+	z-index: -1;
 }
 
-#cardcell {
+.cardcell {
 	position: absolute;
 	width: 53px;
 	height: 39px;
@@ -22,139 +22,139 @@
 	padding-left: 7px;
 }
 
-#cardcell:hover {
+.cardcell:hover {
 	border: 2px solid red;
 	margin-top: -2px;
 	margin-left: -2px;
 	cursor: pointer;
 }
 
-#A1 {
+.A1 {
 	top: 154px; 
 	left: 186px;
 }
 
-#A2 {
+.A2 {
 	top: 154px; 
 	left: 259px;
 }
 
-#A3 {
+.A3 {
 	top: 154px; 
 	left: 332px;
 }
 
-#A4 {
+.A4 {
 	top: 154px; 
 	left: 405px;
 }
 
-#A5 {
+.A5 {
 	top: 154px; 
 	left: 478px;
 }
 
-#B1 {
+.B1 {
 	top: 206px; 
 	left: 186px;
 }
 
-#B2 {
+.B2 {
 	top: 206px; 
 	left: 259px;
 }
 
-#B3 {
+.B3 {
 	top: 206px; 
 	left: 332px;
 }
 
-#B4 {
+.B4 {
 	top: 206px; 
 	left: 405px;
 }
 
-#B5 {
+.B5 {
 	top: 206px; 
 	left: 478px;
 }
 
-#C1 {
+.C1 {
 	top: 259px; 
 	left: 186px;
 }
 
-#C2 {
+.C2 {
 	top: 259px; 
 	left: 259px;
 }
 
-#C3 {
+.C3 {
 	top: 259px; 
 	left: 332px;
 }
 
-#C4 {
+.C4 {
 	top: 259px; 
 	left: 405px;
 }
 
-#C5 {
+.C5 {
 	top: 259px; 
 	left: 478px;
 }
 
-#D1 {
+.D1 {
 	top: 313px; 
 	left: 186px;
 }
 
-#D2 {
+.D2 {
 	top: 313px; 
 	left: 259px;
 }
 
-#D3 {
+.D3 {
 	top: 313px; 
 	left: 332px;
 }
 
-#D4 {
+.D4 {
 	top: 313px; 
 	left: 405px;
 }
 
-#D5 {
+.D5 {
 	top: 313px; 
 	left: 478px;
 }
 
-#E1 {
+.E1 {
 	top: 366px; 
 	left: 186px;
 }
-#E2 {
+.E2 {
 	top: 366px; 
 	left: 259px;
 }
-#E3 {
+.E3 {
 	top: 366px; 
 	left: 332px;
 }
-#E4 {
+.E4 {
 	top: 366px; 
 	left: 405px;
 }
-#E5 {
+.E5 {
 	top: 366px; 
 	left: 478px;
 }
 
-#slots {
+.slots {
 	position: absolute;
 	width: 58px;
 	height: 50px;
-	background-image: url("/img/blankslot.gif");
+	background-image: url("./img/blankslot.gif");
 	text-align: center;
 	font-family: "Times New Roman", Times, serif;
 	font-style: italic;
@@ -164,43 +164,43 @@
 	padding-left: 7px;
 }
 
-#S1 {
+.S1 {
 	top: 424px; 
 	left: 187px;
 }
 
-#S2 {
+.S2 {
 	top: 424px; 
 	left: 260px;
 }
 
-#S3 {
+.S3 {
 	top: 424px; 
 	left: 333px;
 }
 
-#S4 {
+.S4 {
 	top: 424px; 
 	left: 406px;
 }
 
-#S5 {
+.S5 {
 	top: 424px; 
 	left: 479px;
 }
 
-#testbtn {
-	background-image: url("/img/startbtn_rect.gif");
+.testbtn {
+	background-image: url("./img/startbtn_rect.gif");
 	width: 80px;
 	height: 25px;
 	display: none;
 }
 
-#testbtn:active {
-	background-image: url("/img/startbtn_rect_down.gif");
+.testbtn:active {
+	background-image: url("./img/startbtn_rect_down.gif");
 }
 
-#scoredisplay {
+.scoredisplay {
 	position: absolute;
 	top: 82px;
 	left: 34px;
@@ -213,7 +213,7 @@
 	font-size: 22px;
 }
 
-#freespindisplay {
+.freespindisplay {
 	position: absolute;
 	top: 78px;
 	left: 568px;
@@ -241,65 +241,65 @@
 	z-index: 5;
 }
 
-#startspinbtn {
+.startspinbtn {
 	position: absolute;
 	top: 255px;
 	left: 575px;
 	width: 53px;
 	height: 53px;
-	background-image: url("/img/takespin.gif");
+	background-image: url("./img/takespin.gif");
 	display: none
 }
 
-#startgamebtn {
+.startgamebtn {
 	position: absolute;
 	top: 255px;
 	left: 575px;
 	width: 53px;
 	height: 53px;
-	background-image: url("/img/startbtn1.gif");
+	background-image: url("./img/startbtn1.gif");
 }
 
-#disabledspinbtn {
+.disabledspinbtn {
 	position: absolute;
 	top: 255px;
 	left: 575px;
 	width: 53px;
 	height: 53px;
-	background-image: url("/img/spin.gif");
+	background-image: url("./img/spin.gif");
 	display: none;
 }
 
-#yesbtn {
+.yesbtn {
 	width: 61px;
 	height: 32px;
 	position: absolute;
 	top: 432px;
 	left: 402px;
-	background-image: url("/img/yesbtn.gif");
+	background-image: url("./img/yesbtn.gif");
 }
 
-#nobtn {
+.nobtn {
 	width: 61px;
 	height: 32px;
 	position: absolute;
 	top: 432px;
 	left: 471px;
-	background-image: url("/img/nobtn.gif");
+	background-image: url("./img/nobtn.gif");
 }
 
-#yesbtn:active { 
-	background-image: url("/img/yesbtn_down.gif"); 
+.yesbtn:active { 
+	background-image: url("./img/yesbtn_down.gif"); 
 }
-#nobtn:active { 
-	background-image: url("/img/nobtn_down.gif");
+.nobtn:active { 
+	background-image: url("./img/nobtn_down.gif");
 }
 
-#questionelements {
+.questionelements {
 	display: none;
 }
 
-#spindisplay {
+.spindisplay {
 	position: absolute;
 	top: 321px;
 	left: 581px;
@@ -312,101 +312,101 @@
 	font-size: 22px;
 }
 
-#vertslingos {
-	background-image: url("/img/vert_bar.gif");
+.vertslingos {
+	background-image: url("./img/vert_bar.gif");
 	width: 7px;
 	height: 251px;
 	display: none
 }
 
-#horizslingos {
-	background-image: url("/img/horiz_bar.gif");
+.horizslingos {
+	background-image: url("./img/horiz_bar.gif");
 	width: 345px;
 	height: 7px;
 	display: none
 }
 
-#diagslingos {
+.diagslingos {
 	width: 336px;
 	height: 242px;
 	display: none
 }
 
-#slingo1 {
+.slingo1 {
 	position: absolute; 
 	top: 155px; 
 	left: 209px;
 }
 
-#slingo2 {
+.slingo2 {
 	position: absolute; 
 	top: 155px; 
 	left: 282px;
 }
 
-#slingo3 {
+.slingo3 {
 	position: absolute; 
 	top: 155px; 
 	left: 355px;
 }
 
-#slingo4 {
+.slingo4 {
 	position: absolute; 
 	top: 155px; 
 	left: 428px;
 }
 
-#slingo5 {
+.slingo5 {
 	position: absolute; 
 	top: 155px; 
 	left: 501px;
 }
 
-#slingo6 {
+.slingo6 {
 	position: absolute; 
 	top: 170px; 
 	left: 187px;
 }
 
-#slingo7 {
+.slingo7 {
 	position: absolute; 
 	top: 222px; 
 	left: 187px;
 }
 
-#slingo8 {
+.slingo8 {
 	position: absolute; 
 	top: 275px; 
 	left: 187px;
 }
 
-#slingo9 {
+.slingo9 {
 	position: absolute; 
 	top: 328px; 
 	left: 187px;
 }
 
-#slingo10 {
+.slingo10 {
 	position: absolute; 
 	top: 381px; 
 	left: 187px;
 }
 
-#slingo11 {
+.slingo11 {
 	position: absolute; 
 	top: 158px; 
 	left: 190px; 
-	background-image: url("/img/diag_bar1.gif");
+	background-image: url("./img/diag_bar1.gif");
 }
 
-#slingo12 {
+.slingo12 {
 	position: absolute; 
 	top: 158px; 
 	left: 190px; 
-	background-image: url("/img/diag_bar2.gif");
+	background-image: url("./img/diag_bar2.gif");
 }
 
-#overlay {
+.overlay {
 	width: 363px;
 	height: 264px;
 	position: absolute;
@@ -415,7 +415,7 @@
 	display: none;
 }
 
-#freespinq {
+.freespinq {
 	position: absolute;
 	top: 413px;
 	left: 186px;
