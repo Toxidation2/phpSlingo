@@ -9,7 +9,7 @@
 	z-index: -1px;
 }
 
-.cardcell {
+#cardcell {
 	position: absolute;
 	width: 53px;
 	height: 39px;
@@ -22,7 +22,7 @@
 	padding-left: 7px;
 }
 
-.cardcell:hover {
+#cardcell:hover {
 	border: 2px solid red;
 	margin-top: -2px;
 	margin-left: -2px;
@@ -150,11 +150,11 @@
 	left: 478px;
 }
 
-.slots {
+#slots {
 	position: absolute;
 	width: 58px;
 	height: 50px;
-	background-image: url("./img/blankslot.gif");
+	background-image: url("/img/blankslot.gif");
 	text-align: center;
 	font-family: "Times New Roman", Times, serif;
 	font-style: italic;
@@ -190,14 +190,14 @@
 }
 
 #testbtn {
-	background-image: url("./img/startbtn_rect.gif");
+	background-image: url("/img/startbtn_rect.gif");
 	width: 80px;
 	height: 25px;
 	display: none;
 }
 
 #testbtn:active {
-	background-image: url("./img/startbtn_rect_down.gif");
+	background-image: url("/img/startbtn_rect_down.gif");
 }
 
 #scoredisplay {
@@ -247,7 +247,7 @@
 	left: 575px;
 	width: 53px;
 	height: 53px;
-	background-image: url("./img/takespin.gif");
+	background-image: url("/img/takespin.gif");
 	display: none
 }
 
@@ -257,7 +257,7 @@
 	left: 575px;
 	width: 53px;
 	height: 53px;
-	background-image: url("./img/startbtn1.gif");
+	background-image: url("/img/startbtn1.gif");
 }
 
 #disabledspinbtn {
@@ -266,7 +266,7 @@
 	left: 575px;
 	width: 53px;
 	height: 53px;
-	background-image: url("./img/spin.gif");
+	background-image: url("/img/spin.gif");
 	display: none;
 }
 
@@ -276,7 +276,7 @@
 	position: absolute;
 	top: 432px;
 	left: 402px;
-	background-image: url("./img/yesbtn.gif");
+	background-image: url("/img/yesbtn.gif");
 }
 
 #nobtn {
@@ -285,17 +285,17 @@
 	position: absolute;
 	top: 432px;
 	left: 471px;
-	background-image: url("./img/nobtn.gif");
+	background-image: url("/img/nobtn.gif");
 }
 
 #yesbtn:active { 
-	background-image: url("./img/yesbtn_down.gif"); 
+	background-image: url("/img/yesbtn_down.gif"); 
 }
 #nobtn:active { 
-	background-image: url("./img/nobtn_down.gif");
+	background-image: url("/img/nobtn_down.gif");
 }
 
-.questionelements {
+#questionelements {
 	display: none;
 }
 
@@ -312,21 +312,21 @@
 	font-size: 22px;
 }
 
-.vertslingos {
-	background-image: url("./img/vert_bar.gif");
+#vertslingos {
+	background-image: url("/img/vert_bar.gif");
 	width: 7px;
 	height: 251px;
 	display: none
 }
 
-.horizslingos {
-	background-image: url("./img/horiz_bar.gif");
+#horizslingos {
+	background-image: url("/img/horiz_bar.gif");
 	width: 345px;
 	height: 7px;
 	display: none
 }
 
-.diagslingos {
+#diagslingos {
 	width: 336px;
 	height: 242px;
 	display: none
@@ -396,17 +396,17 @@
 	position: absolute; 
 	top: 158px; 
 	left: 190px; 
-	background-image: url("./img/diag_bar1.gif");
+	background-image: url("/img/diag_bar1.gif");
 }
 
 #slingo12 {
 	position: absolute; 
 	top: 158px; 
 	left: 190px; 
-	background-image: url("./img/diag_bar2.gif");
+	background-image: url("/img/diag_bar2.gif");
 }
 
-.overlay {
+#overlay {
 	width: 363px;
 	height: 264px;
 	position: absolute;
