@@ -6,7 +6,7 @@
 		<title>phpSlingo</title>
 		<link href="index.css" rel="stylesheet" type="text/css" media="all">
 	</head>
-	<body>
+	<body id="body">
 		<form method="post">
             <?php
                 $debug = true;
