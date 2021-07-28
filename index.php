@@ -2,64 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta id="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
 		<title>phpSlingo</title>
 		<link href="index.css" rel="stylesheet" type="text/css" media="all">
 	</head>
-	<body id="body">
+	<body>
 		<form method="post">
-			<?php
-                $debug = true;
-                $dataArray = ["Toxidation 1", "Toxidation 2", "Toxidation 3", "Toxidation 4", "Toxidation 5"];
-                if (!$debug || @!$_POST["restoration"]) {
-                    if (isset($_COOKIE["data"])) {
-                        $data = explode(";", substr($_COOKIE["data"], 6));
-                        $array = [];
-                        for ($index1 = 0; $index1 < count($dataArray); $index1++) {
-                            $value1 = str_replace(" ", "-", $dataArray[$index1]);
-                            if (@!$_POST[$value1]) {
-                                for ($index2 = 0; $index2 < count($data); $index2++) {
-                                    $value2 = $data[$index2];
-                                    if ($value1 == $value2) {
-                                        $array[] = $value2;
-                                    }
-                                }
-                            }
-                        }
-                        for ($index1 = 0; $index1 < count($dataArray); $index1++) {
-                            $value1 = str_replace(" ", "-", $dataArray[$index1]);
-                            if (@!$_POST[$value1]) {
-                                $boolean = false;
-                                for ($index2 = 0; $index2 < count($array); $index2++) {
-                                    $value2 = $array[$index2];
-                                    if ($value1 == $value2) {
-                                        $boolean = true;
-                                        break;
-                                    }
-                                }
-                                if (!$boolean) {
-                                    $originalValue1 = $value1;
-                                    $value1 = str_replace("-", " ", $value1);
-                                    echo("<input type=\"submit\" value=\"$value1\" id=\"$originalValue1\">");
-                                }
-                            } else {
-                                $data = $_COOKIE["data"] . $value1 . ";";
-                                setcookie("data", $data, 0, "/phpSlingo");
-                                header("Refresh: 0");
-                            }
-                        }
-                    } else {
-                        setcookie("data", "data: ", 0, "/phpSlingo");
-                        header("Refresh: 0");
-                    }
-                } else {
-                    setcookie("data", "", time() - 1, "/phpSlingo");
-                    header("Refresh: 0");
-                }
-                if ($debug) {
-                    echo("<input type=\"submit\" value=\"Data Restoration\" id=\"restoration\">");
-                }
-            ?>
 			<img src="./img/background.gif" alt="" id="bg">
 			&nbsp;
 			<div id="A1" class="cardcell"></div>
@@ -100,12 +48,12 @@
 			<div id="scoredisplay">0</div>
 			<div id="spindisplay">0</div>
 			<div id="freespindisplay">0</div>
-			<div id="bonuspntdisplay">88,888</div>
+			<div class="bonuspntdisplay">88,888</div>
 			<audio id="click" src="./sounds/click.wav" preload="auto"></audio>
 			<audio id="spinclick_snd" src="./sounds/spinclick.wav" preload="auto"></audio>
 			<audio id="filltile_snd" src="./sounds/filltile.wav" preload="auto"></audio>
 			<audio id="slingo_snd" src="./sounds/slingo2.wav" preload="auto"></audio>
-			<audio id="invalid_snd" src="./sounds/invalid.wav" preload="auto"></audio>
+			<audio id="invalname_snd" src="./sounds/invalname.wav" preload="auto"></audio>
 			<audio id="coin" src="./sounds/goldcoin.wav" preload="auto"></audio>
 			<audio id="slot1_snd" src="./sounds/slot1.wav" preload="auto"></audio>
 			<audio id="slot2_snd" src="./sounds/slot2.wav" preload="auto"></audio>
@@ -142,7 +90,59 @@
 			<img src="./img/freespinq.gif" alt="" id="freespinq" class="questionelements">
 			<div id="yesbtn" class="questionelements"></div>
 			<div id="nobtn" class="questionelements"></div>
-			<div id="bonuspntdisplay"></div>
+			<div class="bonuspntdisplay"></div>
+            <?php
+                $debug = true;
+                $dataArray = ["Toxnameation 1", "Toxnameation 2", "Toxnameation 3", "Toxnameation 4", "Toxnameation 5"];
+                if (!$debug || @!$_POST["restoration"]) {
+                    if (isset($_COOKIE["data"])) {
+                        $data = explode(";", substr($_COOKIE["data"], 6));
+                        $array = [];
+                        for ($index1 = 0; $index1 < count($dataArray); $index1++) {
+                            $value1 = str_replace(" ", "-", $dataArray[$index1]);
+                            if (@!$_POST[$value1]) {
+                                for ($index2 = 0; $index2 < count($data); $index2++) {
+                                    $value2 = $data[$index2];
+                                    if ($value1 == $value2) {
+                                        $array[] = $value2;
+                                    }
+                                }
+                            }
+                        }
+                        for ($index1 = 0; $index1 < count($dataArray); $index1++) {
+                            $value1 = str_replace(" ", "-", $dataArray[$index1]);
+                            if (@!$_POST[$value1]) {
+                                $boolean = false;
+                                for ($index2 = 0; $index2 < count($array); $index2++) {
+                                    $value2 = $array[$index2];
+                                    if ($value1 == $value2) {
+                                        $boolean = true;
+                                        break;
+                                    }
+                                }
+                                if (!$boolean) {
+                                    $originalValue1 = $value1;
+                                    $value1 = str_replace("-", " ", $value1);
+                                    echo("<input type=\"submit\" value=\"$value1\" name=\"$originalValue1\">");
+                                }
+                            } else {
+                                $data = $_COOKIE["data"] . $value1 . ";";
+                                setcookie("data", $data, 0, "/phpSlingo");
+                                header("Refresh: 0");
+                            }
+                        }
+                    } else {
+                        setcookie("data", "data: ", 0, "/phpSlingo");
+                        header("Refresh: 0");
+                    }
+                } else {
+                    setcookie("data", "", time() - 1, "/phpSlingo");
+                    header("Refresh: 0");
+                }
+                if ($debug) {
+                    echo("<input type=\"submit\" value=\"Data Restoration\" name=\"restoration\">");
+                }
+            ?>
 		</form>
 	</body>
 </html>
